@@ -1,0 +1,15 @@
+/* line 8, icons.scss */
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 14, icons.scss */
+.i-invisible {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+}

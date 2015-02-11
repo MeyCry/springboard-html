@@ -1,0 +1,31 @@
+/*
+    Отдельный файл нужен затем, чтобы файлы подключались последовательно.
+    И для других вкусных функций при коллективной работе.
+*/
+
+//@import "compass"; // градиенты scss компаса
+
+
+// базовые блоки
+@import "basic/_base.styl";             // переменные и функции самого проекта
+@import "basic/_mixins.styl";           // общие функции
+@import "basic/_reset.styl";            // обнуляем + приводим по максимуму к единому виду
+
+//@import "scss/sprites.css";           // Подключаем если пользуемся scss спрайтами
+//@import "scss/icons.css";             // Подключаем если пользуемся scss картинки в base64
+
+@import "basic/_typo.styl";             // глобальные стили, типографика, reset 2.0
+@import "basic/_layout.styl";           // стили разметки
+@import "basic/_includes.styl";         // i-стили те что можно добавить к любому елементу
+@import "basic/_forms.styl";            // формы, кнопки
+@import "basic/_atoms.styl";            // прочие атом-блоки
+@import "basic/_template.styl";         // стили шаблона
+@import "basic/_content.styl";          // стили разных страниц все что не понятно куда писать, писать сюда
+
+// блоки
+
+
+@media print {
+	@import "basic/_print.css"; // стили для печати
+}
+

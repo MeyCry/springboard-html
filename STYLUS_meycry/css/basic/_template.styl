@@ -1,0 +1,44 @@
+html{
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html,
+body,
+.container {
+    height: 100%;
+}
+body {
+    font: $basefont $regular;
+    color: $textColor;
+    background-color: $white;
+    line-height: 1.6;
+    position: relative;
+    word-wrap: break-word; // перенос длинных слов
+
+    select-color();
+}
+
+.container {
+    height: auto;
+    min-height: 100%;
+}
+
+.main {
+    @extend .i-container;
+    padding-bottom: $footerHeight;
+    @extend .clearfix;
+    position: relative;
+}
+
+.foot {
+    background-color: $white;
+    position: relative;
+    margin-top: $footerHeight * -1;
+    height: $footerHeight;
+    clear: both;
+    padding-left: 10px;
+    padding-right: 10px;
+    @extend .i-container;
+}
+

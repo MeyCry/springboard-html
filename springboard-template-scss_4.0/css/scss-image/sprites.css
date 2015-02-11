@@ -1,0 +1,11 @@
+.icons-sprite {
+  background-image: url('../images/sprites/icons-s53221dd849.png');
+  background-repeat: no-repeat;
+}
+
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}

@@ -1,0 +1,19 @@
+/* line 42, icons/*.png */
+.icons-sprite, .header_bg {
+  background: url('../images/sprites/icons-s53221dd849.png') no-repeat;
+}
+
+/* line 7, _sprites-config.sass */
+.inline-block, .header_bg {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 16, sprites.sass */
+.header_bg {
+  background-position: 0 0;
+  height: 156px;
+  width: 130px;
+}

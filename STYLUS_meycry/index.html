@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>PageName - ProjectName</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- сначала подключаем scss -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/start.css" />
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="screen, projection" href="css/ie.css" /><![endif]-->
+
+
+    <!-- потом все остальные скрипты -->
+    <!--[if IE]><script type="text/javascript" src="js/lib/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="js/lib/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/responsive-table.js"></script>
+</head>
+<body>
+<section class="container">
+    <header class="head">
+        Привет, я хеадер!
+    </header><!-- .head -->
+    <section class="main">
+        <!--<article>-->
+            <!--<h1 class="test">Мы, <strike>«убийцы bootstrap»</strike>-->
+                <!--<small>базовый шаблон для верстки — <b><i>springboard MeyCry</i></b></small>-->
+            <!--</h1>-->
+			<!--<h1 class="test2">Вы, <strike>«убийцы bootstrap»</strike>-->
+				<!--<small>базовый шаблон для верстки — <b><i>springboard MeyCry</i></b></small>-->
+			<!--</h1>-->
+        <!--</article>-->
+
+        <div id="nameTag">Сергей</div>
+        <template id="nameTagTemplate">
+            <style>
+                .outer {
+                    border: 2px solid brown;
+                    border-radius: 1em;
+                    background: red;
+                    font-size: 20pt;
+                    width: 14em;
+                    height: 7em;
+                    text-align: center;
+                }
+                .boilerplate {
+                    color: white;
+                    font-family: sans-serif;
+                    padding: 0.5em;
+                }
+                .name {
+                    color: black;
+                    background: white;
+                    font-family: "Marker Felt", cursive;
+                    font-size: 45pt;
+                    padding-top: 0.2em;
+                }
+            </style>
+            <div class="outer">
+                <div class="boilerplate">
+                    Здравствуйте! Меня зовут
+                </div>
+                <div class="name">
+                    <content></content>
+                </div>
+            </div>
+        </template>
+        <script>
+            var shadow = document.querySelector('#nameTag').webkitCreateShadowRoot();
+            var template = document.querySelector('#nameTagTemplate');
+            shadow.appendChild(template.content);
+            document.querySelector('#nameTag').textContent = 'Игорь';
+            template.remove();
+        </script>
+    </section><!-- .main -->
+</section><!-- section.container -->
+<footer class="foot">
+    Ну а я, липкий футер!
+</footer><!-- .foot -->
+<!--[if IE 6]>
+<div class="ie6-must-die">
+    <h2>Внимание!</h2>
+    <p>Вы используете браузер Internet Explorer 6, выпущенный в 2001 году. Это самый небезопасный и морально устаревший браузер, «божий дар для взломщика».</p>
+    <p>Настоятельно рекомендуем скачать и установить быстрый и безопасный браузер <a href="http://www.mozilla-europe.org/ru/" rel="nofollow" target="_blank">Firefox</a> или <a href="https://www.google.com/chrome" rel="nofollow" target="_blank">Chrome</a> (это бесплатно). </p>
+</div>
+<![endif]-->
+</body>
+</html>

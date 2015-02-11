@@ -1,0 +1,39 @@
+html{
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html,
+body,
+.container {
+    height: 100%;
+}
+body {
+    font: @basefont @regular;
+    color: @textColor;
+    background-color: @white;
+    line-height: 1.6;
+    position: relative;
+    word-wrap: break-word; // перенос длинных слов
+
+    .select-color();
+}
+
+.container {
+    .i-container;
+    height: auto;
+    min-height: 100%;
+}
+
+.main {
+    padding-bottom: @footerHeight;
+    .clearfix();
+}
+
+.foot {
+    position: relative;
+    margin-top: @footerHeight * -1;
+    height: @footerHeight;
+    clear: both;
+    .i-container;
+}
